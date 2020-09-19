@@ -3,6 +3,7 @@
     --color-vinho: #482926;
     --color-texto: #212529;
     --color-cinza: #F8F9FA;
+    --font-laura: 'Special Elite', cursive;
 }
 
 * {
@@ -62,43 +63,6 @@ body {
     font-weight: bold;
 }
 
-.quem-somos {
-    display: flex;
-    justify-content: space-between;
-    height: 300px;
-    margin: 0 0;
-    width: auto; 
-    padding: 25px;
-    color: var(--color-texto);
-}
-
-.quem-somos img {
-    vertical-align: middle;
-    margin: 40px 20px 40px 10%;
-    width: 200px;
-    
-}
-
-.quem-somos div {
-    /* margin: 40px 20px 40px 20px; */
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    justify-content: center;
-    /* font-size: 22px; */
-    font-weight: lighter;
-}
-
-.quem-somos a {
-    display: flex;
-    align-items: center;
-}
-
-.quem-somos a img {
-    max-height: 70px;
-    cursor: pointer;
-}
-
 .quem-somos a img:hover{
     background-image: url("/assets/botaoHover.svg");
     background-repeat: no-repeat;
@@ -118,7 +82,8 @@ body {
 }
 
 .loja h1{
-    font-family: 'Special Elite', cursive;
+    /* font-family: 'Special Elite', cursive; */
+    font-family: var(--font-laura);
     display: flex;
     justify-content: space-around;
     margin-top: 35px;
@@ -152,88 +117,3 @@ body {
     color: var(--color-rosa);
 }
 
-.rodape{
-    background-color: var(--color-vinho);
-    display: flex;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    justify-content: space-around;
-    
-    
-}
-
-.rodape .mapa-do-site{
-    display: flex;
-    flex-direction: column;
-    width: 66%;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-.rodape .mapa-do-site header {
-    width: 100%;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: var(--color-rosa);
-}
-
-.rodape .mapa-do-site div {
-    display: flex;
-    line-height: 30px;
-    margin: 0 10px 0;
-    justify-content: space-between;
-    
-}
-
-.rodape .mapa-do-site div div {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    background-color: red;
-
-}
-.rodape .ladinho {
-    margin-left: 20px;
-}
-.rodape .contato {
-    padding-left: 25px;
-    padding-right: 25px;
-    
-}
-
-.rodape .contato header{
-    width: 80%;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: var(--color-rosa);
-}
-
-
-.rodape .contato div{
-    background-color: aqua;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    line-height: 40px;
-    margin-left: 20px;
-}
-
-.rodape a {
-    color: white;
-    display: flex;
-    flex-direction: column;
-}
-.rodape .contato span {
-    width: 40px;
-    height: 40px;
-    background-color: red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-
-}
-
-.rodape .contato span::after{
-    content: "";
-}

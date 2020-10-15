@@ -1,3 +1,4 @@
+/* ----------------------- GERAIS ----------------------- */
 :root{
     --color-rosa: #FAC5BE; 
     --color-vinho: #482926;
@@ -23,100 +24,146 @@ a {
 body {
     -webkit-font-smoothing: antialised;
 }
-#header-home {
+
+/* ----------------------- FALSO HEADER ----------------------- */
+
+.falsoheader {
+    background-color: var(--color-rosa);
+    padding: 5px;
+}
+
+/* ----------------------- HEADER ----------------------- */
+.header {
     background-color: var(--color-rosa);
     margin: 0 0;
-    height: 100vh;
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
     
 }
 
-#header-home .menu {
+.header .menu {
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 40px 30px 40%;
+    padding: 40px 40px 30px 30%;
     font-size: 22px;
     font-weight: lighter;
 }
 
-#header-home .logo{
-    height: 20em;
+.header .logo{
+    
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    padding: 25px;
-    margin: 5% 10% auto;
+    padding-left: 20px;
 
 }
+.header .logo img {
+    height: 80px;
+   
+}
 
-#header-home .menu a {
+.header .menu a {
     color: var(--color-texto);
     transition-duration: 0.4s;
 }
 
-#header-home .menu a img {
+.header .menu a img {
     max-width: 25px;
     vertical-align: middle;
 }
 
-#header-home .menu a:hover {
+.header .menu a:hover {
     font-weight: bold;
 }
 
-.quem-somos a img:hover{
-    background-image: url("/assets/botaoHover.svg");
-    background-repeat: no-repeat;
-    background-size: 70px;
-    background-position: center;
-    
-    /*CONTINUAR A TENTAR MUDAR A IMAGEM*/    
+/* ----------------------- RODAPÉ ----------------------- */
+
+.rodape{
+    background-color: var(--color-vinho);
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: space-around;
 }
-.loja {
-    background-color: var(--color-cinza);
+
+.rodape a {
+    color: white;
+    display: flex;
+    flex-direction: column;    
+}
+
+.rodape .mapa-do-site{
+    display: flex;
+    flex-direction: column;
+    /* width: 66%; */
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 60%;
+}
+
+.rodape .mapa-do-site header {
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--color-rosa);
+}
+
+.rodape .mapa-do-site div {
+    display: flex;
+    line-height: 30px;
+    margin: 0 10px 0;
+    justify-content: space-between;  
+    width: 50%;
+}
+
+.rodape .mapa-do-site div div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rodape .contato {
+    /* padding-left: 25px;
+    padding-right: 25px; */
+    width: 20%;
+}
+
+.rodape .contato header{
+    width: 80%;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--color-rosa);
+}
+
+
+/* .rodape .contato div{
+    background-color: aqua;
     display: flex;
     flex-direction: column;
     flex: 1;
-    justify-content: center;
-    margin: 20px;
+    line-height: 40px;
+    margin-left: 20px;
+} */
 
-}
-
-.loja h1{
-    /* font-family: 'Special Elite', cursive; */
-    font-family: var(--font-laura);
+.rodape .contato div{
     display: flex;
-    justify-content: space-around;
-    margin-top: 35px;
-    margin-bottom: 20px;
+    flex-direction: column;
+    padding-left: 20px;
+    line-height: 40px;
 }
 
-.loja .home-cards-loja {
-    margin: 0 auto;
+.rodape .contato a{
+    /* width: 100%; */
+    max-width: 300px;
+    /* height: 72px; */
+    display: inline;
     
 }
-
-.loja a {
-    color: var(--color-vinho);
-    background-color: var(--color-rosa);
-    border-radius: 80px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
-    width: 100%;
-    max-width: 200px;
-    font-size: 25px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    transition: 500ms;
-    justify-content: center;
-    align-self: center;
-    cursor: pointer;
-}
-
-.loja a:hover{
-    background-color: var(--color-vinho);
-    color: var(--color-rosa);
+.rodape .contato img {
+    width: 20px;
+    height: 20px;
 }
 

@@ -5,11 +5,13 @@
     --color-texto: #212529;
     --color-cinza: #E9ECEF;
     --font-laura: 'Special Elite', cursive;
+    font-size: 62.5%;
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -38,31 +40,31 @@ body {
     margin: 0 0;
     display: flex;
     height: 100px;
-    justify-content: space-around;
+    /*justify-content: space-between;*/
     
 }
 
 .header .menu {
-    width: 60%;
+    width: 70%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 40px 40px 30px 30%;
-    font-size: 22px;
+    justify-content: space-evenly;
+    /* justify-content: space-between; */
+    padding: 30px 0px 30px 0;
+    /*font-size: 22px;*/
+    font-size: 2rem;
     font-weight: lighter;
 }
 
 .header .logo{
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 20px;
-
 }
+
 .header .logo img {
     height: 80px;
-   
 }
 
 .header .menu a {
@@ -80,90 +82,64 @@ body {
 }
 
 /* ----------------------- RODAPÉ ----------------------- */
-
 .rodape{
     background-color: var(--color-vinho);
     display: flex;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    justify-content: space-around;
-}
-
-.rodape a {
+    justify-content: center;
     color: white;
-    display: flex;
-    flex-direction: column;    
+    font-size: 1.6rem;
+    margin: 0;
 }
 
-.rodape .mapa-do-site{
-    display: flex;
-    flex-direction: column;
-    /* width: 66%; */
-    padding-left: 25px;
-    padding-right: 25px;
-    width: 60%;
+.rodape a{
+    color: white;
+    
+}
+
+.rodape .mapa-do-site {
+    /* background-color: red; */
+    max-width: 50%;
+    height: 250px;
+    padding-top: 3rem;
+    
 }
 
 .rodape .mapa-do-site header {
-    width: 100%;
-    font-weight: bold;
-    margin-bottom: 10px;
+    /* background-color: yellow; */
+    padding-bottom: 10px;
     color: var(--color-rosa);
+    font-weight: bold;
 }
 
-.rodape .mapa-do-site div {
-    display: flex;
-    line-height: 30px;
-    margin: 0 10px 0;
-    justify-content: space-between;  
-    width: 50%;
-}
-
-.rodape .mapa-do-site div div {
-    display: flex;
-    flex-direction: column;
-
+.rodape nav {
+    /* background-color: #FAC5BE; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 10px; 
+    column-gap: 20px;
+    line-height: 2;
 }
 
 .rodape .contato {
-    /* padding-left: 25px;
-    padding-right: 25px; */
-    width: 20%;
+    /* background-color: violet; */
+    max-width: 50%;
+    padding-top: 3rem;
 }
 
-.rodape .contato header{
-    width: 80%;
-    font-weight: bold;
-    margin-bottom: 10px;
+.rodape .contato header {
+    /* background-color: aqua; */
+    padding-bottom: 10px;
     color: var(--color-rosa);
+    font-weight: bold;
 }
 
-
-/* .rodape .contato div{
-    background-color: aqua;
+.rodape .contato div {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    line-height: 40px;
-    margin-left: 20px;
-} */
-
-.rodape .contato div{
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-    line-height: 40px;
+    line-height: 3;
 }
 
-.rodape .contato a{
-    /* width: 100%; */
-    max-width: 300px;
-    /* height: 72px; */
-    display: inline;
-    
-}
 .rodape .contato img {
-    width: 20px;
-    height: 20px;
+    padding-right: 5px;
+    max-width: 25px;
 }
-
